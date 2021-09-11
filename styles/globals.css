@@ -6,4 +6,8 @@
   .waitlist {
     @apply uppercase bg-[#050b7d] h-12 w-[217px] rounded-md  text-white border-[3px]  border-[#050b7d] hover:text-[#050b7d]  hover:bg-white hover:border-[3px] hover:border-[#050b7d];
   }
+
+  .track-logo {
+    @apply flex items-center justify-between h-16 p-5 rounded shadow-lg mb-14;
+  }
 }
