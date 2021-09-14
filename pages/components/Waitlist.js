@@ -23,7 +23,7 @@ function Header() {
           <button className="uppercase hover:text-[#050b7d] mr-7">
             Join The Community
           </button>
-          <button className="waitlist">
+          <button className="waitlist-btn">
             <span className="m-7">Join The Waitlist</span>
           </button>
         </div>
@@ -39,7 +39,7 @@ function Header() {
             <br />
             placeat nulla veniam repellendus veniam?
           </p>
-          <button className="waitlist mt-12 w-full lg:w-[217px]">
+          <button className="waitlist-btn mt-12 w-full lg:w-[217px]">
             <span className="m-7">Join The Waitlist</span>
           </button>
         </div>
@@ -55,29 +55,21 @@ function Header() {
       <section className="px-12 pt-14 pb-10 md:px-48 md:pt-8">
         <div className="flex flex-col justify-between bg-white shadow-lg h-60 w-full p-6 md:px-14 md:h-24 md:flex-row">
           <div className="flex items-center">
-            <Image
-              src={emoji}
-              alt="emoji"
-              width={38}
-              height={37}
-              className="bg-[#FDEFD0] rounded-full p-4"
-            />
+            <div className="h-12 w-12 bg-[#FDEFD0] flex justify-center items-center rounded-full">
+              <Image src={emoji} alt="emoji" width={38} height={37} />
+            </div>
             <h4 className="pl-4 font-semibold">UI Challenges</h4>
           </div>
           <div className="flex items-center">
-            <Image
-              src={library}
-              alt="library"
-              className="bg-[#F1FEF4] rounded-full"
-            />
+            <div className="h-12 w-12 bg-[#F1FEF4] flex justify-center items-center rounded-full">
+              <Image src={library} alt="library" width={38} height={37} />
+            </div>
             <h4 className="pl-4 font-semibold">Developer Tracks</h4>
           </div>
           <div className="flex items-center">
-            <Image
-              src={terrain}
-              alt="terrain"
-              className="bg-[#E4E1FD] rounded-full"
-            />
+            <div className="h-12 w-12 bg-[#E4E1FD] flex justify-center items-center rounded-full">
+              <Image src={terrain} alt="terrain" width={38} height={37} />
+            </div>
             <h4 className="pl-4 font-semibold">Product Mindset</h4>
           </div>
         </div>
