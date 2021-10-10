@@ -31,7 +31,7 @@ function Header() {
 
       <section className="flex flex-col pl-12 pr-12 py-10 justify-between items-center md:pl-48 md:flex-row">
         <div className="flex flex-col ">
-          <p className="font-bold text-4xl md:text-5xl">
+          <p className="font-bold text-3xl md:text-5xl">
             Learn and Become a <br /> Professional Developer
           </p>
           <p className="py-4 text-gray-500 ">
