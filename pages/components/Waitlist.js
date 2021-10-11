@@ -4,8 +4,14 @@ import hero from "../../public/hero-1.svg";
 import emoji from "../../public/Waitlist Logos/emoji_events.svg";
 import library from "../../public/Waitlist Logos/local_library.svg";
 import terrain from "../../public/Waitlist Logos/terrain.svg";
+import Modal from "./Modal";
+import { useState } from 'react'
 
 function Header() {
+  const [visible, setVisible] = useState(false); //modal visibility
+  const waitlistHandler = () => {
+    setVisible(!visible);
+  }
   return (
     <div className="bg-gradient-to-br from-[#B4C2F2] via-[#F5F7FFAF] to-[#FFFFFF]">
       <div className="flex w-full px-12 py-0 justify-between md:px-48">
@@ -23,7 +29,7 @@ function Header() {
           <button className="uppercase hover:text-[#050b7d] mr-7">
             Join The Community
           </button>
-          <button className="waitlist-btn">
+          <button className="waitlist-btn" onClick={waitlistHandler}>
             <span className="m-7">Join The Waitlist</span>
           </button>
         </div>
@@ -39,7 +45,7 @@ function Header() {
             <br />
             placeat nulla veniam repellendus veniam?
           </p>
-          <button className="waitlist-btn mt-12 w-full lg:w-[217px]">
+          <button className="waitlist-btn mt-12 w-full lg:w-[217px]" onClick={waitlistHandler}>
             <span className="m-7">Join The Waitlist</span>
           </button>
         </div>
@@ -74,6 +80,7 @@ function Header() {
           </div>
         </div>
       </section>
+      <Modal visible={visible} />
     </div>
   );
 }
