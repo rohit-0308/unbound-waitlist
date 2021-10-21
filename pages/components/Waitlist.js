@@ -41,9 +41,9 @@ function Header() {
             Learn and Become a <br /> Professional Developer
           </p>
           <p className="py-4 text-gray-500 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime{" "}
+            Intuition, Mindset and Vision are crucial for developers, 
             <br />
-            placeat nulla veniam repellendus veniam?
+            and with Unbound, we will instil this in you!
           </p>
           <button className="waitlist-btn mt-12 w-full lg:w-[217px]" onClick={waitlistHandler}>
             <span className="m-7">Join The Waitlist</span>
@@ -80,7 +80,7 @@ function Header() {
           </div>
         </div>
       </section>
-      <Modal visible={visible} />
+      <Modal visible={visible} onClose={()=>setVisible(!visible)}/>
     </div>
   );
 }
