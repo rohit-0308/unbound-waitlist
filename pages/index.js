@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import Waitlist from "./components/Waitlist";
-import Tracks from "./components/Tracks";
-import Skills from "./components/Skills";
+import Head from 'next/head';
+import Image from 'next/image';
+import Waitlist from './components/Waitlist';
+import Tracks from './components/Tracks';
+import Skills from './components/Skills';
 
 export default function Home() {
   return (
