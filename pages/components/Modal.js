@@ -123,7 +123,7 @@ const Input = styled.input`
   width: 100%;
 `;
 const Button = styled.button`
-  width: 100%;
+  width: 300px;
 `;
 const Message = styled.h2`
   color: black;
